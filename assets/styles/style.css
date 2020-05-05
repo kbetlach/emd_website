@@ -28,6 +28,7 @@ a {
     height: 250px;
     float: left;
     border-radius: 50%;
+    border: 1px solid #F0AD4E;
     padding: 5px;
   }
 
@@ -36,12 +37,14 @@ a {
     height: 200px;
     float: left;
     border-radius: 50%;
+    border: 1px solid #F0AD4E;
     padding: 5px;
   }
 
 #emd_nav {
     width: 75px;
     height: 75px;
+    border: 1px solid #F0AD4E;
 }
 
 #landingSection {
@@ -51,9 +54,9 @@ a {
 #landingSection, #servicesSection, #contactSection  {
     background-color: #002f6c;
     color: #ffffff;
-    border-left: 3px solid #F0AD4E;
-    border-right: 3px solid #F0AD4E;
+    border: 2px solid #F0AD4E;
     padding: 10px;
+    border-radius: 25px;
 }
 
 #aboutSection, #instagramSection {

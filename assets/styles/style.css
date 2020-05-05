@@ -211,7 +211,7 @@ ul {
     }
 
     #name, #email, #message {
-        width: 700px;
+        max-width: 100%;
         margin: 5px;
     }
 
@@ -341,7 +341,7 @@ ul {
     }
 
     #name, #email, #message {
-        width: 325px;
+        max-width: 100%;
         margin: 5px;
     }
 

@@ -1,6 +1,7 @@
 html, body {
     height: 100%;
     background-image: url(../images/spikes.png);
+    font-family: 'Montserrat';
 }
 
 .container {
@@ -11,6 +12,7 @@ html, body {
 #header {
     background-color: white;
     position: fixed;
+    z-index: 100;
 }
 
 a:link {
@@ -32,7 +34,7 @@ a {
 #marketing {
     width: 250px;
     height: 200px;
-    float: right;
+    float: left;
     border-radius: 50%;
     padding: 5px;
   }
@@ -48,7 +50,6 @@ a {
 
 #landingSection, #servicesSection, #contactSection  {
     background-color: #002f6c;
-    font-family: 'Montserrat';
     color: #ffffff;
     border-left: 3px solid #F0AD4E;
     border-right: 3px solid #F0AD4E;
@@ -72,8 +73,11 @@ h1 {
 
 h2 {
     font-size: 38px;
-    font-family: 'Montserrat';
     text-align: center;
+}
+
+.feed {
+    font-size: 22px;
 }
 
 .nav-item {
@@ -82,8 +86,11 @@ h2 {
     bottom: -15px;
     padding: 15px;
     color: #002f6c;
-    font-family: 'Montserrat';
     font-size: 22px;
+}
+
+.icons {
+    display: none !important;
 }
 
 .navbar-brand {
@@ -129,7 +136,6 @@ ul {
     margin: 4px 10px;
     padding: 10px 25px;
     font-size: 16px;
-    font-family: 'Montserrat';
 }
 
 /*MEDIA QUERIES ==================================================*/
@@ -148,18 +154,9 @@ ul {
         left: 275px;
     }
 
-    #git, #linked {
-        position: relative;
-        left: 25px;
-    }
-
     ul {
         width: 100%;
         justify-content: center;
-    }
-
-    .label2 {
-        left: 150px;
     }
 }
 
@@ -177,11 +174,6 @@ ul {
     ul {
         width: 100%;
         justify-content: center;
-    }
-
-    #git, #linked {
-        position: relative;
-        left: 40px;
     }
 }
 
@@ -205,11 +197,6 @@ ul {
         width: 100%;
         justify-content: center;
     }
-
-    #git, #linked {
-        position: relative;
-        left: 10px;
-    }
 }
 
 @media (max-width: 768px) {
@@ -223,28 +210,18 @@ ul {
         margin-left: 30px;
     }
 
+    #name, #email, #message {
+        width: 700px;
+        margin: 5px;
+    }
+
     .nav-item {
         position: relative;
         left: 5px;
     }
 
-    #git, #linked {
-        position: relative;
-        left: 0px;
-    }
-
     #henryJohn {
         max-width: 300px;
-    }
-
-    .label {
-        bottom: 75px;
-        font-size: 24px;
-    }
-
-    .label2 {
-        width: 100px;
-        left: 100px;
     }
 }
 
@@ -259,15 +236,6 @@ ul {
         margin-left: 25px;
         width: 690px;
         text-align: center;
-    }
-
-    .label {
-        bottom: 75px;
-        font-size: 24px;
-    }
-
-    .label2 {
-        left: 150px;
     }
 }
 
@@ -294,12 +262,6 @@ ul {
         width: 100%;
         justify-content: center;
     }
-
-    .label {
-        bottom: 75px;
-        font-size: 24px;
-    }
-
 }
 
 @media (max-width: 414px) {
@@ -313,16 +275,12 @@ ul {
     }
 
     .nav-item {
-        width: 80px;
+        display: none !important;
     }
 
-    #git, #linked {
-        left: 10px;
-    }
-
-    .label2 {
-        width: 100px;
-        left: 80px;
+    .icons {
+        display: inline !important;
+        text-align: center;
     }
 
     .card-footer {
@@ -337,24 +295,17 @@ ul {
         margin-top: 65px;
     }
 
+    header {
+        width: 390px;
+        position: static;
+    }
+
     .nav-item {
-        width: 75px;
+        display: none !important;
     }
 
-    .label2 {
-        width: 100px;
-        left: 80px;
-    }
-
-    #header-about {
-        text-align: center;
-    }
-
-    #header-contact {
-        text-align: center;
-    }
-
-    #header-portfolio {
+    .icons {
+        display: inline !important;
         text-align: center;
     }
 }
@@ -365,13 +316,17 @@ ul {
         width: 355px;
     }
 
-    .nav-item {
-        width: 80px;
+    header {
+        position: static;
+        width: 355px;
     }
 
-    .label2 {
-        width: 100px;
-        left: 70px;
+    .nav-item {
+        display: none !important;
+    }
+
+    .icons {
+        display: inline !important;
     }
 
     .card-footer {
@@ -385,13 +340,17 @@ ul {
         width: 345px;
     }
 
-    .nav-item {
-        width: 80px;
+    #name, #email, #message {
+        width: 325px;
+        margin: 5px;
     }
 
-    .label2 {
-        width: 100px;
-        left: 70px;
+    .nav-item {
+        display: none !important;
+    }
+
+    .icons {
+        display: inline !important;
     }
 
     #brand {
@@ -405,16 +364,19 @@ ul {
         width: 300px;
     }
 
+    header {
+        position: static;
+    }
+
     #brand {
         width: 320px;
     }
 
     .nav-item {
-        width: 80px;
+        display: none !important;
     }
 
-    .label2 {
-        width: 100px;
-        left: 40px;
+    .icons {
+        display: inline !important;
     }
 }

@@ -4,26 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elite Media Design</title>
-    <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
 </head>
+
 <body>
+
     <header id="header" class="col-md-12"><!--Header and Navigation Section-->
         <ul class="nav nav-tabs">
             <a class="navbar-brand" id="brand" href="#landingSection"><img src="assets/images/emd.svg" id="emd_nav" alt="brand"></a> 
-    
             <a class="nav-item" href="#aboutSection">About Us</a>
-
             <a class="nav-item" href ="#servicesSection">Services</a>
-
             <a class="nav-item" href="#instagramSection">Instagram</a>
-
             <a class="nav-item" href="#contactSection">Contact</a>
-    </ul>
-</header>
+        </ul>
+
+        <ul class="icons">
+            <div class="row">
+                <a class="nav-icon" href="#aboutSection"><i class="fas fa-user-friends"></i></a>
+                <a class="nav-icon" href ="#servicesSection"><i class="fas fa-concierge-bell"></i></a>
+                <a class="nav-icon" href="#instagramSection"><i class="fab fa-instagram"></i></a>
+                <a class="nav-icon" href="#contactSection"><i class="fas fa-phone"></i></a>
+            </div>
+        </ul>
+
+    </header>
+
+    <br />
 
 <div class="container">
                 
@@ -44,16 +53,15 @@
         <p>If you're ready to take the plunge, head to the bottom of the page and get in contact with us! You won't regret it.</p>
         
         <br />
-
     </div>
 
     <br />
 
     <div class="about" id="aboutSection"> <!--About Us Section-->
-    <img src="assets/images/henryJohn.jpg" alt="henry and john" class="responsive" id="henryJohn">
+        <img src="assets/images/henryJohn.jpg" alt="henry and john" class="responsive" id="henryJohn">
 
         <h2 class="text-center">About Us</h2>
-        <p>EMD was founded in 2005 in a garage when two college roommates, Henry and John, put their minds together to create all things web related.</p>
+        <p>EMD was founded in 2005 in a garage when two college roommates, Henry and John, put their minds together to create all things web related. 15 years later, we now have over 30 employees and make our home in the IDS Center in downtown Minneapolis, Minnesota.</p>
 
         <p>Our Mission Statement: 
             "We strive to deliver value in our service, and to understand with respect all of our clients needs and to provide a partnership that is created when we host our clients web services, develop their site, market their product/service or simply give them advice."
@@ -102,7 +110,31 @@
     <br />
 
     <div class="instagram" id="instagramSection"> <!--Instagram Feed-->
-        <h2>Our Instagram Feed</h2>
+        <h2>Live Instagram Feed</h2>
+
+        <hr />
+
+        <div class="row feed">
+            <div class="col-md-12 text-center" id="biography"></div>
+        </div>
+
+        <br />
+
+        <div class="row feed">
+            <div class="col-md-2"></div>
+            <div class="col-md-3" id="number-of-posts"></div>
+            <div class="col-md-3" id="followers"></div>
+            <div class="col-md-2" id="following"></div>
+            <div class="col-md-2"></div>
+        </div>
+
+        <br />
+
+        <p>Follow our Instagram page! <a href="https://www.instagram.com/goblue42agency/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a></p>
+
+        <hr />
+
+        <div class="row" id="posts"></div>
     </div>
 
     <br />
@@ -134,7 +166,7 @@
             <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <label class="fieldtext"></label>
-                    <input type="text" id="name" placeholder="Name"></input>
+                    <input type="text" id="name" placeholder="Name">
                 </div>
              <div class="col-md-2"></div>
         </div>
@@ -143,13 +175,11 @@
             <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <label class="fieldtext"></label>
-                    <input type="text" id="email" placeholder="Email Address"></input>
+                    <input type="text" id="email" placeholder="Email Address">
                 </div>
              <div class="col-md-2"></div>
         </div>
 
-             <br />
-    
         <div class="row">
             <div class="col-md-2"></div>
                 <div class="col-md-8">
@@ -164,14 +194,18 @@
                 <button class="justify-content-center" type="submit" id="submit">Submit</button>
             </div>
         </div>
-
-        </div>
-
     </div>
+
+</div>
 
     <div class="footer-margin"> <!--Footer-->
         <footer class="card-footer">2020 - EMD ©</footer>
-    </div>  
+    </div>
+    
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/javaScript/script.js"></script>
 
 </body>
 </html>

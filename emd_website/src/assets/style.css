@@ -1,0 +1,416 @@
+html, body {
+    height: 100%;
+}
+
+.container {
+    padding-top: 100px;
+    width: 100%;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a {
+    color: #F0AD4E;
+}
+
+#henryJohn {
+    width: 250px;
+    height: 250px;
+    float: left;
+    border-radius: 50%;
+    padding: 5px;
+  }
+
+#marketing {
+    width: 250px;
+    height: 200px;
+    float: right;
+    border-radius: 50%;
+    padding: 5px;
+  }
+
+#emd {
+    width: 75px;
+    height: 75px;
+}
+
+#landingSection, #servicesSection, #contactSection  {
+    background-color: #002f6c;
+    font-family: 'Montserrat';
+    color: #ffffff;
+    border-left: 3px solid #F0AD4E;
+    border-right: 3px solid #F0AD4E;
+    padding: 10px;
+}
+
+#aboutSection, #instagramSection {
+    padding: 10px;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #F0AD4E;
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 38px;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+.nav-item {
+    position: relative;
+    left: 500px;
+    bottom: -15px;
+    padding: 15px;
+    color: #002f6c;
+    font-family: 'Montserrat';
+    font-size: 22px;
+}
+
+.navbar-brand {
+    position: relative;
+    margin-left: 100px;
+    padding: 10px 20px 10px 20px;
+}
+
+.responsive {
+    width: 100%;
+}
+
+.card-footer {
+    margin-top: 100px;
+    flex-shrink: 0;
+    width: 100%;
+    text-align: center;
+    border-top: 8px solid #F0AD4E;
+    background-color: #002f6c;
+    color: #ffffff;
+}
+
+hr {
+    background-color: #F0AD4E;
+}
+
+ul {
+    font-size: 20px;
+}
+
+#clients {
+    font-size: 20px;
+}
+
+#message {
+    width: 900px;
+    height: 100px;
+    margin: 10px;
+}
+
+.fieldtext {
+    padding: 10px;
+}
+
+#submit {
+    background-color:#4aaaa5;
+    color: white;
+    margin: 4px 10px;
+    cursor: pointer;
+    padding: 10px 25px;
+    font-size: 16px;
+}
+
+/*MEDIA QUERIES ==================================================*/
+
+@media (max-width: 1200px) {
+    .container {
+        width: 1175px;
+    }
+
+    #brand {
+        margin-left: 50px;
+    }
+
+    .nav-item {
+        position: relative;
+        left: 275px;
+    }
+
+    #git, #linked {
+        position: relative;
+        left: 25px;
+    }
+
+    ul {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .label2 {
+        left: 150px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #brand {
+        margin-left: 100px;
+    }
+
+    .nav-item {
+       position: relative;
+       left: 75px;
+       text-align: center;
+    }
+
+    ul {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #git, #linked {
+        position: relative;
+        left: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .container {
+        width: 885px;
+    }
+
+    #brand {
+        margin-left: 95px;
+    }
+
+    .nav-item {
+       position: relative;
+       left: 20px;
+       text-align: center;
+    }
+
+    ul {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #git, #linked {
+        position: relative;
+        left: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        margin-left: 25px;
+        width: 760px;
+    }
+
+    #brand {
+        margin-left: 30px;
+    }
+
+    .nav-item {
+        position: relative;
+        left: 5px;
+    }
+
+    #git, #linked {
+        position: relative;
+        left: 0px;
+    }
+
+    #henryJohn {
+        max-width: 300px;
+    }
+
+    .label {
+        bottom: 75px;
+        font-size: 24px;
+    }
+
+    .label2 {
+        width: 100px;
+        left: 100px;
+    }
+}
+
+@media (max-width: 698px) {
+
+    .container {
+        width: 690px;
+        margin-left: 70px;
+    }
+
+    #brand {
+        margin-left: 25px;
+        width: 690px;
+        text-align: center;
+    }
+
+    .label {
+        bottom: 75px;
+        font-size: 24px;
+    }
+
+    .label2 {
+        left: 150px;
+    }
+}
+
+@media (max-width: 640px) {
+    .navbar-brand {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .container {
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+
+    .nav-link {
+        margin-top: 3px;
+        background-color: #ffffff;
+        margin: auto;
+        justify-content: center;
+    }
+
+    ul {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .label {
+        bottom: 75px;
+        font-size: 24px;
+    }
+
+}
+
+@media (max-width: 414px) {
+    .container {
+        width: 395px;
+        margin-left: 10px;
+    }
+
+    #brand {
+        width: 400px;
+    }
+
+    .nav-item {
+        width: 80px;
+    }
+
+    #git, #linked {
+        left: 10px;
+    }
+
+    .label2 {
+        width: 100px;
+        left: 80px;
+    }
+
+    .card-footer {
+        margin-top: 200px;
+    }
+}
+
+@media (max-width: 411px) {
+    .container {
+        width: 390px;
+        margin-left: 10px;
+        margin-top: 65px;
+    }
+
+    .nav-item {
+        width: 75px;
+    }
+
+    .label2 {
+        width: 100px;
+        left: 80px;
+    }
+
+    #header-about {
+        text-align: center;
+    }
+
+    #header-contact {
+        text-align: center;
+    }
+
+    #header-portfolio {
+        text-align: center;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .container {
+        width: 355px;
+    }
+
+    .nav-item {
+        width: 80px;
+    }
+
+    .label2 {
+        width: 100px;
+        left: 70px;
+    }
+
+    .card-footer {
+        margin-top: 200px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .container {
+        width: 345px;
+    }
+
+    .nav-item {
+        width: 80px;
+    }
+
+    .label2 {
+        width: 100px;
+        left: 70px;
+    }
+
+    #brand {
+        width: 360px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .container {
+        width: 300px;
+    }
+
+    #brand {
+        width: 320px;
+    }
+
+    .nav-item {
+        width: 80px;
+    }
+
+    .label2 {
+        width: 100px;
+        left: 40px;
+    }
+}

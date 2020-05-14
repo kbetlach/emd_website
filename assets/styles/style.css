@@ -9,6 +9,11 @@ html, body {
     width: 100%;
 }
 
+.inner {
+    width: 1000px;
+    margin: auto;
+}
+
 #header {
     background-color: white;
     position: fixed;
@@ -54,9 +59,8 @@ a {
 #landingSection, #servicesSection, #contactSection  {
     background-color: #002f6c;
     color: #ffffff;
-    border: 2px solid #F0AD4E;
     padding: 10px;
-    border-radius: 25px;
+    width: 0 auto;
 }
 
 #aboutSection, #instagramSection {
